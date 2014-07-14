@@ -146,17 +146,11 @@ header{
 
 header h1{
 	display: none;
-}
-
-header h2{
-	color: #0091B5;
-	font-size: 1.2em;
-	font-weight: lighter;
-	margin: 0 0 1em 2.8em;
+	margin-bottom: 2em;
 }
 
 header #logo img{
-	margin: 1em 0 0 2em;
+	margin: 1em 0 2em 2em;
 	width: 250px;
 }
 
@@ -284,6 +278,19 @@ nav ul li .activo{
 	display: none;
 	height: 100%;
 	width: 100%;
+}
+
+#banner #slider .elementos h2 {
+	color: rgba(255, 255, 255, 0.75);
+	bottom: 1em;
+	font-size: 2em;
+	font-weight: lighter;
+	left: 3em;
+	letter-spacing: 0.1em;
+	margin: 0;
+	position: absolute;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #banner #slider .visible {
