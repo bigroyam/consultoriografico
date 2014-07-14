@@ -2,7 +2,7 @@ $(function(){
 	$('#btnSig').on('click', avanzar);
 	$('#btnAnt').on('click', retroceder);
 
-	setInterval(avanzar,5000);
+	setInterval(avanzar,6000);
 
 	function avanzar(){
 		var size = $('#slider').find('.elementos').size();
