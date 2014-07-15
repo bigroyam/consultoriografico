@@ -136,28 +136,26 @@ footer #datos #copy{
 header{
 	background: #FFF;
 	background-image: url(../images/h-bg.png);
-	background-position: 4em -1px;
+	background-position: 2em -1px;
 	background-repeat: no-repeat;
 	border-top: 8px solid #BFD600;
-	border-bottom: 5px solid #BFD600;
 	padding-top: 2em;
 	position: relative;
 }
 
 header h1{
 	display: none;
-	margin-bottom: 2em;
 }
 
 header #logo img{
-	margin: 1em 0 2em 2em;
+	margin: 1em 0 1em 2em;
 	width: 250px;
 }
 
 header #redes{
 	position: absolute;
-	top: 0.4em;
-	right: 0.5em;
+	top: 0.5em;
+	right: 1em;
 }
 
 header #redes ul{
@@ -183,7 +181,7 @@ header #redes ul li a{
 }
 
 nav{
-	background: #CCC;
+	background: #C0C0C0;
 	width: 100%;
 }
 
@@ -216,14 +214,14 @@ nav ul li a:hover{
 
 nav ul li .activo{
 	background: #BFD600;
-	color: #FFF;
+	color: #000;
 }
 
 #banner {
 	background: #696969;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 	display: none;
-	height: 325px;
+	height: 400px;
 	width: 100%;
 }
 
@@ -236,7 +234,7 @@ nav ul li .activo{
 }
 
 #banner #slider #botones {
-	bottom: 0.5em;
+	bottom: 2em;
 	right: 10%;
 	position: absolute;
 }
@@ -254,9 +252,8 @@ nav ul li .activo{
 }
 
 #banner #slider #botones ul li a {
-	background: rgba(255, 255, 255, 0.3);
+	background: #BFD600;
 	border-radius: 0.2em 0 0 0.2em;
-	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 	color: #000;
 	display: block;
 	font-size: 1.4em;
@@ -271,19 +268,20 @@ nav ul li .activo{
 }
 
 #banner #slider #botones ul li a:hover {
-	background: rgba(255, 255, 255, 0.6);
+	background: #000;
+	color: #FFF;
 }
 
 #banner #slider .elementos {
 	display: none;
 	height: 100%;
+	position: relative;
 	width: 100%;
 }
 
 #banner #slider .elementos h2 {
-	color: rgba(255, 255, 255, 0.75);
-	bottom: 1em;
-	font-size: 2em;
+	color: #FFF;
+	font-size: 1.7em;
 	font-weight: lighter;
 	left: 3em;
 	letter-spacing: 0.1em;
@@ -291,6 +289,7 @@ nav ul li .activo{
 	position: absolute;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	top: 1em;
 }
 
 #banner #slider .visible {
@@ -298,7 +297,7 @@ nav ul li .activo{
 }
 
 #banner #slider #ele1 {
-	background: url(../images/imagen1.jpg) no-repeat;
+	background: url(../images/imagen1.jpg) center no-repeat;
 	background-size: cover;
 }
 
@@ -308,12 +307,12 @@ nav ul li .activo{
 }
 
 #banner #slider #ele3 {
-	background: url(../images/imagen3.jpg) no-repeat;
+	background: url(../images/imagen3.jpg) center no-repeat;
 	background-size: cover;
 }
 
 #banner #slider #ele4 {
-	background: url(../images/imagen4.jpg) no-repeat;
+	background: url(../images/imagen4.jpg) center no-repeat;
 	background-size: cover;
 }
 
@@ -323,11 +322,7 @@ nav ul li .activo{
 }
 
 #contenido .item{
-	background: white;
-	border-radius: 0.3em;
-	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-	margin: 1em 0;
-	padding: 0.5em;
+	margin: 3em 0;
 }
 
 #contenido .item h3{
@@ -356,7 +351,7 @@ nav ul li .activo{
 #contenido_p .proyecto figure img{
 	border-radius: 1em 0 1em 1em;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-	width: 300px;
+	width: 250px;
 }
 
 #contenido_p .proyecto ul{
@@ -441,12 +436,29 @@ nav ul li .activo{
 		width: 35%;
 	}
 
+	header{
+		background-position: 4em -1px;
+	}
+
+	header #logo img {
+		margin: 0 0 0.5em 3em;
+		width: 300px;
+	}
+
 	nav{
 		background: none;
 		bottom: 0px;
 		position: absolute;
 		right: 0px;
-		width: 40%;
+		width: 32em;
+	}
+
+	nav ul {
+		display: block;
+	}
+
+	nav ul li a {
+		padding: 0.5em 2em;
 	}
 
 	nav ul li a:hover{
@@ -463,9 +475,13 @@ nav ul li .activo{
 
 	#contenido .item{
 		display: inline-block;
-		margin: 1em 1.5%;
+		margin: 2em 2%;
 		vertical-align: top;
 		width: 44.5%;
+	}
+
+	#contenido_p .proyecto figure img{
+		width: 400px;
 	}
 
 	#equipo{
@@ -485,7 +501,6 @@ nav ul li .activo{
 
 
 	#contenido .item{
-		margin: 1em 1.5%;
 		width: 20%;
 	}
 
