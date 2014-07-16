@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?ocv7um');
-	src:url('../fonts/icomoon.eot?#iefixocv7um') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?ocv7um') format('woff'),
-		url('../fonts/icomoon.ttf?ocv7um') format('truetype'),
-		url('../fonts/icomoon.svg?ocv7um#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-7fy75v');
+	src:url('../fonts/icomoon.eot?#iefix-7fy75v') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-7fy75v') format('woff'),
+		url('../fonts/icomoon.ttf?-7fy75v') format('truetype'),
+		url('../fonts/icomoon.svg?-7fy75v#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,26 +25,30 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-flechas-iz:before {
+	content: "\f100";
+}
+.icon-flechas-der:before {
+	content: "\f101";
+}
 .icon-telefono:before {
-	content: "\e603";
+	content: "\e600";
 	margin: 0 0.5em 0 0;
 }
 .icon-mail:before {
-	content: "\e604";
+	content: "\e601";
 	margin: 0 0.5em 0 0;
 }
 .icon-location:before {
 	content: "\e602";
 	margin: 0 0.5em 0 0;
 }
-.icon-twitter:before {
-	content: "\e600";
-}
 .icon-facebook:before {
-	content: "\e601";
+	content: "\e603";
 }
-
-
+.icon-twitter:before {
+	content: "\e604";
+}
 
 
 body{
@@ -234,7 +238,7 @@ nav ul li .activo{
 }
 
 #banner #slider #botones {
-	bottom: 2em;
+	bottom: 1em;
 	right: 10%;
 	position: absolute;
 }
@@ -256,9 +260,9 @@ nav ul li .activo{
 	border-radius: 0.2em 0 0 0.2em;
 	color: #000;
 	display: block;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: 0;
-	padding: 0 0.5em;
+	padding: 0.2em 0.6em;
 	text-decoration: none;
 }
 
@@ -268,7 +272,7 @@ nav ul li .activo{
 }
 
 #banner #slider #botones ul li a:hover {
-	background: #000;
+	background: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 }
 
@@ -438,6 +442,7 @@ nav ul li .activo{
 
 	header{
 		background-position: 4em -1px;
+		padding-bottom: 1em;
 	}
 
 	header #logo img {
@@ -450,7 +455,7 @@ nav ul li .activo{
 		bottom: 0px;
 		position: absolute;
 		right: 0px;
-		width: 32em;
+		width: 27em;
 	}
 
 	nav ul {
@@ -458,7 +463,7 @@ nav ul li .activo{
 	}
 
 	nav ul li a {
-		padding: 0.5em 2em;
+		padding: 0.5em 1.5em;
 	}
 
 	nav ul li a:hover{
