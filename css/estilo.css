@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
+
+
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-7fy75v');
-	src:url('../fonts/icomoon.eot?#iefix-7fy75v') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-7fy75v') format('woff'),
-		url('../fonts/icomoon.ttf?-7fy75v') format('truetype'),
-		url('../fonts/icomoon.svg?-7fy75v#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?bqs2v7');
+	src:url('../fonts/icomoon.eot?#iefixbqs2v7') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?bqs2v7') format('woff'),
+		url('../fonts/icomoon.ttf?bqs2v7') format('truetype'),
+		url('../fonts/icomoon.svg?bqs2v7#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,6 +27,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cerrar:before {
+	content: "\f057";
+}
 .icon-flechas-iz:before {
 	content: "\f100";
 }
@@ -32,16 +37,16 @@
 	content: "\f101";
 }
 .icon-telefono:before {
-	content: "\e600";
 	margin: 0 0.5em 0 0;
+	content: "\e600";
 }
 .icon-mail:before {
-	content: "\e601";
 	margin: 0 0.5em 0 0;
+	content: "\e601";
 }
 .icon-location:before {
-	content: "\e602";
 	margin: 0 0.5em 0 0;
+	content: "\e602";
 }
 .icon-facebook:before {
 	content: "\e603";
@@ -49,6 +54,7 @@
 .icon-twitter:before {
 	content: "\e604";
 }
+
 
 
 body{
@@ -329,11 +335,8 @@ nav ul li .activo{
 	margin: 3em 0;
 }
 
-#contenido .item h3{
-	color: #0091B5;
-	font-size: 1.2em;
+#contenido .item h2{
 	text-align: center;
-	text-transform: uppercase;
 }
 
 #contenido_p{
@@ -380,6 +383,15 @@ nav ul li .activo{
 	border-bottom: thin solid #EEE;
 }
 
+#contenido_po .clasificacion {
+	margin: 3em 2em;
+}
+
+#contenido_po .thumbnail {
+	display: inline-block;
+	vertical-align: top;
+}
+
 #equipo{
 	margin: 1em auto;
 	max-width: 18.5em;
@@ -402,7 +414,7 @@ nav ul li .activo{
 }
 
 #equipo .persona h3{
-	color: #0091B5;
+	color: #515151;
 	font-size: 1em;
 }
 
@@ -414,11 +426,177 @@ nav ul li .activo{
 	color: #0091B5;
 }
 
-#equipo .persona .rostro img{
-	border: 3px solid #BFD600;
+#equipo .persona .rostro .imagen{
+	border: thin solid #AFAFAF;
+	border-radius: 0.6em;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+	height: 100px;
 	width: 100px;
 }
 
+#equipo .persona .rostro #felo {
+	background: url(../images/felo.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #felo:hover {
+	background: url(../images/felo2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #andres {
+	background: url(../images/andres.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #andres:hover {
+	background: url(../images/andres2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #gabo {
+	background: url(../images/gabo.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #gabo:hover {
+	background: url(../images/gabo2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #grace {
+	background: url(../images/grace.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #grace:hover {
+	background: url(../images/grace2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #gonza {
+	background: url(../images/gonza.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #gonza:hover {
+	background: url(../images/gonza2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #alejo {
+	background: url(../images/alejo.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #alejo:hover {
+	background: url(../images/alejo2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+
+/* GALERIA */
+
+#contenido_po .boton img {
+	border: thin solid #AFAFAF;
+}
+
+#contenido_po .overlay {
+	background-color: rgba(0, 0, 0, 0.75);
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1;
+}
+
+#contenido_po .overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+#contenido_po .popup {
+	background-color: white;
+	display: inline-block;
+	left: 50%;
+	opacity: 0;
+	padding: 25px;
+	position: fixed;
+	text-align: center;
+	top: 30%;
+	visibility: hidden;
+	width: 65%;
+	z-index: 10;
+
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#contenido_po .popup img {
+	width: 80%;
+}
+
+#contenido_po .overlay:target+.popup {
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
+}
+
+#contenido_po .icon-cerrar {
+	color: #BFD600;
+	font-size: 1.3em;
+	position: absolute;
+	right: 0.5em;
+	text-decoration: none;
+	top: 0.5em;
+}
+
+#contenido_po .icon-cerrar:hover {
+	color: #000;
+}
+
+#contenido_po .icon-flechas-iz{
+	background-color: rgba(0,0,0,0.1);
+	color: #424242;
+	left: 0;
+	padding: 1.3em;
+	position: absolute;
+	text-decoration: none;
+	top:43%;
+}
+
+#contenido_po .icon-flechas-iz:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFF;
+}
+
+#contenido_po .icon-flechas-der{
+	background-color: rgba(0,0,0,0.1);
+	color: #424242;
+	right: 0;
+	padding: 1.3em;
+	position: absolute;
+	text-decoration: none;
+	top:43%;
+}
+
+#contenido_po .icon-flechas-der:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFF;
+}
 
 
 
@@ -456,10 +634,6 @@ nav ul li .activo{
 		position: absolute;
 		right: 0px;
 		width: 27em;
-	}
-
-	nav ul {
-		display: block;
 	}
 
 	nav ul li a {

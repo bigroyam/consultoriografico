@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-7fy75v');
-	src:url('fonts/icomoon.eot?#iefix-7fy75v') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-7fy75v') format('woff'),
-		url('fonts/icomoon.ttf?-7fy75v') format('truetype'),
-		url('fonts/icomoon.svg?-7fy75v#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?bqs2v7');
+	src:url('fonts/icomoon.eot?#iefixbqs2v7') format('embedded-opentype'),
+		url('fonts/icomoon.woff?bqs2v7') format('woff'),
+		url('fonts/icomoon.ttf?bqs2v7') format('truetype'),
+		url('fonts/icomoon.svg?bqs2v7#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,16 +23,19 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-double-left:before {
+.icon-cerrar:before {
+	content: "\f057";
+}
+.icon-flechas-iz:before {
 	content: "\f100";
 }
-.icon-angle-double-right:before {
+.icon-flechas-der:before {
 	content: "\f101";
 }
-.icon-phone:before {
+.icon-telefono:before {
 	content: "\e600";
 }
-.icon-envelope:before {
+.icon-mail:before {
 	content: "\e601";
 }
 .icon-location:before {
