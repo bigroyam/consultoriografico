@@ -232,36 +232,30 @@ nav ul li .activo{
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 	display: none;
 	height: 400px;
-	width: 100%;
-}
-
-#banner #slider {
-	height: 100%;
-	margin: auto;
-	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 
-#banner #slider #botones {
-	bottom: 1em;
+#banner  #botones {
+	bottom: 2em;
 	right: 10%;
 	position: absolute;
+	z-index: 100000;
 }
 
-#banner #slider #botones ul {
+#banner  #botones ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#banner #slider #botones ul li {
+#banner  #botones ul li {
 	display: inline-block;
 	margin: 0 -1.5px;
 	padding: 0;
 }
 
-#banner #slider #botones ul li a {
+#banner  #botones ul li a {
 	background: #BFD600;
 	border-radius: 0.2em 0 0 0.2em;
 	color: #000;
@@ -272,14 +266,22 @@ nav ul li .activo{
 	text-decoration: none;
 }
 
-#banner #slider #botones ul li:last-child a {
+#banner  #botones ul li:last-child a {
 	border-left: thin solid #000;
 	border-radius: 0 0.2em 0.2em 0;
 }
 
-#banner #slider #botones ul li a:hover {
-	background: rgba(0, 0, 0, 0.5);
-	color: #FFF;
+#banner  #botones ul li a:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+#banner #slider {
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 
 #banner #slider .elementos {
@@ -381,6 +383,14 @@ nav ul li .activo{
 
 #contenido_p .proyecto ul li:first-child{
 	border-bottom: thin solid #EEE;
+}
+
+#contenido_po h2 {
+	color: #0091B5;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 1em;
+	text-transform: uppercase;
 }
 
 #contenido_po .clasificacion {
@@ -511,7 +521,7 @@ nav ul li .activo{
 	right: 0;
 	top: 0;
 	visibility: hidden;
-	z-index: 1;
+	z-index: 10000000;
 }
 
 #contenido_po .overlay:target {
@@ -530,7 +540,7 @@ nav ul li .activo{
 	top: 30%;
 	visibility: hidden;
 	width: 65%;
-	z-index: 10;
+	z-index: 10000001;
 
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
