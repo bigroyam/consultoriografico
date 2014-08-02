@@ -1,5 +1,5 @@
 $(function(){
 
-	$('#slider').cycle({ fx:'curtainY', next: '#btnSig', prev: '#btnAnt'});
+	$('#slider').cycle({ fx:'curtainY', speed:'300', next: '#btnSig', prev: '#btnAnt'});
 
 });
