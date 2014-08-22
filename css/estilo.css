@@ -65,7 +65,8 @@ body{
 
 footer{
 	background: #000;
-	padding: 3em 1em;
+	padding: 2em 1em;
+	text-align: center;
 }
 
 footer form{
@@ -85,7 +86,7 @@ footer form #casillas input{
 	font-weight: lighter;
 	margin-bottom: 0.5em;
 	padding: 0.2em;
-	width: 100%;
+	width: 98%;
 }
 
 footer form #casillas textarea{
@@ -94,11 +95,10 @@ footer form #casillas textarea{
 	color: white;
 	font-size: 0.8em;
 	font-weight: lighter;
-	max-height: 5em;
-	max-width: 100%;
-	min-height: 5em;
-	min-width: 100%;
+	height: 5em;
 	padding: 0.2em;
+	resize: none;
+	width: 98%;
 }
 
 footer form #casillas input:focus, footer form #casillas textarea:focus{
@@ -108,20 +108,31 @@ footer form #casillas input:focus, footer form #casillas textarea:focus{
 
 footer form #botones{
 	display: block;
+	text-align: center;
+	width: 100%;
 }
 
 footer form #botones .button{
 	background: #BFD600;
 	border: none;
-	font-size: 0.9em;
-	margin: 0.4em 0.4em 0;
 	display: inline-block;
+	font-size: 0.9em;
+	font-weight: lighter;
+	margin: 0.5em 0.4em;
+	padding: 0.2em;
+	transition: all 0.3s;
 	width: 9em;
 }
 
+footer form #botones .button:hover {
+	background: #0091B5;
+	color: #FFF;
+}
+
 footer #datos{
-	margin-top: 3em;
+	margin: 3em auto;
 	text-align: center;
+	width: 18em;
 }
 
 footer #datos p{
@@ -160,7 +171,10 @@ header h1{
 header #logo img{
 	margin: 1em 0 1em 2em;
 	width: 250px;
+	transition: all 0.3s;
 }
+
+
 
 header #redes{
 	position: absolute;
@@ -211,10 +225,12 @@ nav ul li{
 
 nav ul li a{
 	color: #0091B5;
+	cursor: alias;
 	display: block;
 	padding: 0.5em;
-	text-decoration: none;
 	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
 nav ul li a:hover{
@@ -264,6 +280,7 @@ nav ul li .activo{
 	margin: 0;
 	padding: 0.2em 0.6em;
 	text-decoration: none;
+	transition: all 0.3s;
 }
 
 #banner  #botones ul li:last-child a {
@@ -299,8 +316,8 @@ nav ul li .activo{
 	letter-spacing: 0.1em;
 	margin: 0;
 	position: absolute;
-	text-transform: uppercase;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
 	top: 1em;
 }
 
@@ -405,6 +422,7 @@ nav ul li .activo{
 #equipo{
 	margin: 1em auto;
 	max-width: 18.5em;
+	text-align: center;
 }
 
 #equipo h2{
@@ -418,9 +436,9 @@ nav ul li .activo{
 #equipo .persona{
 	display: inline-block;
 	margin: 0 1em 4em;
-	width: 7em;
 	text-align: center;
 	vertical-align: top;
+	width: 6.3em;
 }
 
 #equipo .persona h3{
@@ -436,12 +454,30 @@ nav ul li .activo{
 	color: #0091B5;
 }
 
-#equipo .persona .rostro .imagen{
+#equipo .persona .rostro {
+	height: 5em;
+	position: relative;
+}
+
+#equipo .persona .rostro .imagen {
+	border-radius: 0.2em;
 	border: thin solid #AFAFAF;
-	border-radius: 0.6em;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
-	height: 100px;
-	width: 100px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+	cursor: progress;
+	height: 5em;
+	left: 0.6em;
+	position: absolute;
+	top: 0;
+	transition: all 0.2s;
+	width: 5em;
+}
+
+#equipo .persona .rostro .imagen:hover {
+	border-radius: 50%;
+	height: 6em;
+	left: 0;
+	top: -0.5em;
+	width: 6em;
 }
 
 #equipo .persona .rostro #felo {
@@ -481,6 +517,26 @@ nav ul li .activo{
 
 #equipo .persona .rostro #grace:hover {
 	background: url(../images/grace2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #mary {
+	background: url(../images/mary1.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #mary:hover {
+	background: url(../images/mary2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #mado {
+	background: url(../images/mado.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#equipo .persona .rostro #mado:hover {
+	background: url(../images/mado2.jpg) center no-repeat;
 	background-size: cover;
 }
 
@@ -614,7 +670,7 @@ nav ul li .activo{
 
 	footer form{
 		display: inline-block;
-		margin: 0 4em;
+		margin-right: 2em;
 		vertical-align: top;
 	}
 
@@ -622,10 +678,9 @@ nav ul li .activo{
 		border-left: thin solid rgba(255,255,255,0.3);
 		display: inline-block;
 		margin: 0 0 0 2em;
-		padding: 0 0 0 2em;
+		padding: 0 0 0 4em;
 		text-align: left;
 		vertical-align: top;
-		width: 35%;
 	}
 
 	header{
@@ -636,6 +691,10 @@ nav ul li .activo{
 	header #logo img {
 		margin: 0 0 0.5em 3em;
 		width: 300px;
+	}
+
+	header #logo img:hover{
+		margin: 0 0 0.5em 6em;
 	}
 
 	nav{
@@ -674,7 +733,7 @@ nav ul li .activo{
 	}
 
 	#equipo{
-		max-width: 28em;
+		max-width: 38em;
 	}
 }
 
@@ -685,9 +744,13 @@ nav ul li .activo{
 @media screen and (min-width: 1100px){
 
 	footer form{
-		margin: 0 10em;
+		margin-right: 4em;
 	}
 
+	footer #datos{
+		margin: 0 0 0 4em;
+		padding: 0 0 0 8em;
+	}
 
 	#contenido .item{
 		width: 20%;
@@ -698,7 +761,7 @@ nav ul li .activo{
 	}
 
 	#equipo{
-		max-width: 55.5em;
+		max-width: 75em;
 	}
 }
 
