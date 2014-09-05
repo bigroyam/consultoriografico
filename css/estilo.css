@@ -406,23 +406,6 @@ nav ul li .activo{
 	border-bottom: thin solid #EEE;
 }
 
-#contenido_po h2 {
-	color: #0091B5;
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-left: 1em;
-	text-transform: uppercase;
-}
-
-#contenido_po .clasificacion {
-	margin: 3em 2em;
-}
-
-#contenido_po .thumbnail {
-	display: inline-block;
-	vertical-align: top;
-}
-
 #equipo{
 	margin: 1em auto;
 	max-width: 18.5em;
@@ -576,8 +559,30 @@ nav ul li .activo{
 
 /* GALERIA */
 
-#contenido_po .boton img {
+#contenido_po {
+	text-align: center;
+}
+
+#contenido_po h2 {
+	color: #0091B5;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 1em;
+	text-transform: uppercase;
+}
+
+#contenido_po .clasificacion {
+	margin: 3em 2em;
+}
+
+#contenido_po .clasificacion .thumbnail {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contenido_po .clasificacion .thumbnail .boton img {
 	border: thin solid #AFAFAF;
+	width: 6em;
 }
 
 #contenido_po .overlay {
@@ -608,7 +613,7 @@ nav ul li .activo{
 	text-align: center;
 	top: 30%;
 	visibility: hidden;
-	width: 65%;
+	width: 60%;
 	z-index: 10000001;
 
 	-webkit-transform: translate(-50%, -50%);
@@ -743,6 +748,10 @@ nav ul li .activo{
 
 	#contenido_p .proyecto figure img{
 		width: 400px;
+	}
+
+	#contenido_po .clasificacion .thumbnail .boton img {
+		width: 10em;
 	}
 
 	#equipo{
