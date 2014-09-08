@@ -85,7 +85,7 @@ footer form #casillas input{
 	color: white;
 	font-size: 0.8em;
 	font-weight: lighter;
-	margin-bottom: 0.5em;
+	margin: 0 0 0.5em 0;
 	padding: 0.2em;
 	width: 98%;
 }
@@ -580,6 +580,15 @@ nav ul li .activo{
 	vertical-align: top;
 }
 
+#contenido_po .clasificacion .thumbnail h3 {
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#contenido_po .clasificacion .thumbnail h4 {
+	text-transform: uppercase;
+}
+
 #contenido_po .clasificacion .thumbnail .boton img {
 	border: thin solid #AFAFAF;
 	width: 6em;
@@ -634,7 +643,7 @@ nav ul li .activo{
 }
 
 #contenido_po .overlay:target+.popup {
-	top: 50%;
+	top: 45%;
 	opacity: 1;
 	visibility: visible;
 }
