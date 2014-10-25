@@ -11,13 +11,13 @@
 			echo 
 			"<script language='javascript'>
 				alert('Gracias por tu mensaje, pronto nos pondremos en contacto contigo.');
-				window.location.href = 'http://prueba.consultoriografico.com/index.html';
+				window.location.href = 'http://consultoriografico.com';
 			</script>";
 		} else {
 			echo
 			"<script language='javascript'>
 				alert('Falló el envío, inténtalo nuevamente.');
-				window.location.href = 'http://prueba.consultoriografico.com/index.html';
+				window.location.href = 'http://consultoriografico.com';
 			</script>";
 		}
 	}
