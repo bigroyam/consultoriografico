@@ -548,7 +548,7 @@ nav ul li .activo{
 }
 
 #contenido_po .overlay {
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.85);
 	bottom: 0;
 	cursor: default;
 	left: 0;
